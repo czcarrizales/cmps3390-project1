@@ -10,14 +10,7 @@ function App() {
 
   return (
     <>
-    <h1>Testing Out</h1>
       <Router>
-        <nav>
-          <ul>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/contact'>Contact</Link></li>
-          </ul>
-        </nav>
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/contact' element={<Contact />} />
