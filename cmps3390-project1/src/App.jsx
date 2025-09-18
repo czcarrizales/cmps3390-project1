@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import './App.css'
 import Home from './Home';
-import NewView from './NewView';
+import Contact from './Contact';
 
 function App() {
 
@@ -15,12 +15,12 @@ function App() {
         <nav>
           <ul>
             <li><Link to='/'>Home</Link></li>
-            <li><Link to='/newview'>Contact</Link></li>
+            <li><Link to='/contact'>Contact</Link></li>
           </ul>
         </nav>
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/newview' element={<NewView />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
 
       </Router>
